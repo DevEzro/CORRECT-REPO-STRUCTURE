@@ -13,7 +13,10 @@ def multiplicacion():
 def division():
     return n1 / n2
 
-print("Pruebas en desarrollo:")
+def saludo():
+    return "¡Hola! Aquí están los resultados de las operaciones."
+
+print(saludo())
 print("Suma:", suma())
 print("Resta:", resta())
 print("Multiplicación:", multiplicacion())
