@@ -13,12 +13,11 @@ def multiplicacion():
 def division():
     return n1 / n2
 
-resultado = {
-    "suma": suma(),
-    "resta": resta(),
-    "multiplicación": multiplicacion(),
-    "división": round(division(), 2)  # Redondeo para mejor presentación
-}
+def saludo():
+    return "¡Hola! Aquí están los resultados de las operaciones corregidos."
 
-print("Versión 1.0 - Cálculo de operaciones:")
-print(resultado)
+print(saludo())
+print("Suma:", suma())
+print("Resta:", resta())
+print("Multiplicación:", multiplicacion())
+print("División:", division())
