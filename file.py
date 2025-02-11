@@ -1,23 +1,17 @@
-n1 = 3
-n2 = 2
+import pytest
+from app import suma, resta, multiplicacion, division
 
-def suma():
-    return n1 + n2
+def test_suma():
+    assert suma() == 5  # 3 + 2 = 5
 
-def resta():
-    return n1 - n2
+def test_resta():
+    assert resta() == 1  # 3 - 2 = 1
 
-def multiplicacion():
-    return n1 * n2
+def test_multiplicacion():
+    assert multiplicacion() == 6  # 3 * 2 = 6
 
-def division():
-    return n1 / n2
+def test_division():
+    assert division() == 1.5  # 3 / 2 = 1.5
 
-def saludo():
-    return "¡Hola! Aquí están los resultados de las operaciones corregidos."
-
-print(saludo())
-print("Suma:", suma())
-print("Resta:", resta())
-print("Multiplicación:", multiplicacion())
-print("División:", division())
+if __name__ == "__main__":
+    pytest.main()
